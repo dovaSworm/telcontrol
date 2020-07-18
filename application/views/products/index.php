@@ -42,18 +42,18 @@ if (isset($_GET['subcategory'])) {
     </div>
         <!-- <h2 class="text-center">Naši Products</h2> -->
         <?php foreach ($products as $product): ?>
-        <div class="product-card-small backlight">
-            <div class="d-flex justify-content-center">
+        <div class="product-card-small">
             <h4><?php echo $product['name'] ?></h4>
                 <!-- <h6><small><i>Proizvodjač:</i></small> <b></b></h6> -->
 
-            </div>
             <div class="row no-gutters">
-                <div id="img-sm-center" class="col-sm-12 col-md-6 text-left">
-              
-                    <img src="<?php echo base_url(); ?>assets/img/productimg/<?php echo $product['url'] ?>"
-                        alt="tmt-9000s-small">
-                    <p class="text-justify"><?php echo word_limiter($product['description'], 20); ?></p>
+                <div class="col-sm-12 col-md-6 text-left">
+                    <div class="pics">
+
+                        <img src="<?php echo base_url(); ?>assets/img/productimg/<?php echo $product['url'] ?>"
+                            alt="tmt-9000s-small">
+                    </div>
+                    <p class="text-justify mt-2"><?php echo word_limiter($product['description'], 20); ?></p>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <ul class="ml-md-5 ml-lg-0">

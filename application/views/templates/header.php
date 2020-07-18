@@ -33,15 +33,21 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top d-block">
             <div class="container">
                 <div id="logo">
-                    <a class="navbar-brand" href="<?php echo base_url(); ?>"><img
+                    <a class="" href="<?php echo base_url(); ?>"><img
                             src="<?php echo base_url(); ?>assets/img/tel-logo.png" alt="Telcontrol"></a>
                 </div>
-                <button id="triangle-up" class="navbar-toggler" type="button" data-toggle="collapse"
+                <!-- <button id="triangle-up" class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-
+                </button> -->
+                <div type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation" class="hamburger" title="MENU">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">

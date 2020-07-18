@@ -60,7 +60,6 @@ class Products extends CI_Controller
         $config['prev_tag_close'] = '</li>';
         $config['attributes'] = array('class' => 'pagination-links');
 // init pagination
-        
 
         $naslov['title'] = 'Telcontrol products';
         if (isset($_GET['category'])) {
@@ -77,13 +76,12 @@ class Products extends CI_Controller
         } else {
             $data['products'] = $this->product_model->get_products($config['per_page'], $offset);
             if (empty($data['products'])) {
-                show_error('Ne postoje traženi artikli / There is no wanted products', 404, $heading = 'Greška/Error');
+                show_error('Ne postoje traženi artikli', 404, $heading = 'Greška');
             }
         }
-        // if(count($data['products']) > 2){
+        if (count($data['products']) >= 5) {
             $this->pagination->initialize($config);
-        // }
-        // echo json_encode($data);
+        }
         $this->load->view('templates/header', $naslov);
         // $this->load->view('templates/hero');
         $this->load->view('templates/menu');

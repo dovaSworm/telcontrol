@@ -14,7 +14,7 @@
         </div>
         <div class="row partners-logo">
             <div class="col-sm-12">
-                <img class="" src="<?php echo base_url(); ?>assets/img/hero.pdf" alt="Third slide">
+                <img class="" src="<?php echo base_url(); ?>assets/img/logo_emerson.jpg" alt="Third slide">
                 <img class="" src="<?php echo base_url(); ?>assets/img/logo-otis.png" alt="Third slide">
                 <img class="" src="<?php echo base_url(); ?>assets/img/tim.jpg" alt="Second slide">
                 <img class="" src="<?php echo base_url(); ?>assets/img/vimar_logo.jpg" alt="Prva slika ">
@@ -127,11 +127,8 @@
                 <div class="text-justify col-sm-12 col-md-4">
                     <h5>Partners</h5>
                     <ul>
-                        <li><a href="https://www.elktoronics.co.uk">Elktoronics</a></li>
-                        <li><a href="https://www.ingersollrand.com/en-us.html">Ingersoll Rand</a></li>
-                        <li><a href="https://www.emerson.com/global">Emerson</a></li>
-                        <li><a href="https://www.otis.com/corporate/">Otis</a></li>
-                        <li><a href="https://www.tim.it/">Tim</a></li>
+                        <li><a href="https://www.elktoronics.co.uk">Elktoronics, UK</a></li>
+                        <li><a href="https://www.devel.rs/">Devel DOO, Srbija</a></li>
                     </ul>
                 </div>
                 <div class="text-justify col-sm-12 col-md-4">Heating controlls, Cooling & Refrigeration controlls, HVAC

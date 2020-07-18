@@ -6,7 +6,7 @@
             <div class="col-sm-12 col-md-6 col-lg-3 p-2">
                 <div class="d-flex flex-column service-card">
                     <h4 class="m-auto">MECHANICAL, HARDWARE, FIRMWARE, SOFTWARE DESIGN</h4>
-                    <img src="<?php echo base_url(); ?>assets/img/hard4.jpg" alt="">
+                    <img src="<?php echo base_url(); ?>assets/img/dev.jpg" alt="">
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 p-2">
@@ -43,8 +43,8 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 p-2 mt-lg-5">
                 <div class="d-flex flex-column service-card">
-                    <h4 class="m-auto">INSTALLATION</h4>
-                    <img src="<?php echo base_url(); ?>assets/img/instal.jpg" alt="">
+                    <h4 class="m-auto">TECHNICAL SUPPORT</h4>
+                    <img src="<?php echo base_url(); ?>assets/img/support.jpg" alt="">
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 p-2 mt-lg-5">

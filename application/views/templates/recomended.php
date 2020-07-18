@@ -1,5 +1,8 @@
 <div class="col col-lg-8 col-12">
     <h3 class="text-center">&nbspRecomended products&nbsp<i class="far fa-thumbs-up"></i></h3>
+    <!-- <div class="w-100 d-flex pattern">
+                <div class="light"></div><div class="red"></div><div class="dark"></div>
+            </div> -->
     <div class="row no-gutters d-flex justify-content-around mt-4">
         <?php foreach ($products as $product): ?>
         <div class="product-card flex-column">

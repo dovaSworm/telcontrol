@@ -13,8 +13,6 @@ class Product_model extends CI_Model
         
         if ($limit) {
             $this->db->limit($limit, $offset);
-            $sql = "SELECT products.* , c.name as category_name, sc.name as subcategory_name FROM products INNER JOIN categories c ON products.category_id = c.id INNER JOIN subcategories sc ON products.subcategory_id = sc.id LIMIT $limit";
-        
         }
         $this->db->select('products.*');
         $this->db->from('products');

@@ -1,18 +1,21 @@
 <main>
     <section id="main">
-        <div class="container">
+        <div class="container bg-white">
             <div class="maindiv">
-            <div class="w-100 d-flex mb-3 pattern">
-                <div class="light"></div><div class="dark"></div><div class="red"></div>
-            </div>
+            <!-- <div class="w-100 d-flex mb-3 pattern">
+                <div class="light"></div><div class="red"></div><div class="dark"></div>
+            </div> -->
             <h1 class="text-center"><b>Telcontrol</b> offer to You Heating controls, Cooling & Refrigeration controls,
-                        HVAC controls, Electrical devices assembling and instalation</h1>
-            <div class="w-100 d-flex mt-3 pattern">
-                <div class="light"></div><div class="dark"></div><div class="red"></div>
-            </div>
+                        HVAC controls, Electrical devices assembling, instalation and technical support</h1>
+            <!-- <div class="w-100 d-flex mt-3 pattern">
+                <div class="light"></div><div class="red"></div><div class="dark"></div>
+            </div> -->
                 <div class="row">
                     <div class="main-menu flex-column d-flex justify-content-start col-12 col-lg-4">
                         <h3>&nbspCategories</h3>
+                        <!-- <div class="w-100 d-flex pattern">
+                <div class="light"></div><div class="red"></div><div class="dark"></div>
+            </div> -->
                         <ul id="menu-ul">
                             <li><span></span>
                                 <a data-toggle="collapse" data-parent="#menu-ul" href="#collapse-1" class="collapsed">
@@ -95,7 +98,7 @@
                                     Remote controls</a>
                                 <ul id="collapse-6" class="collapse">
                                     <li><a class=""
-                                            href="<?php echo base_url(); ?>products/?subcategory=14">OMD Telcom</a>
+                                            href="<?php echo base_url(); ?>products/?subcategory=8">OMD Telcom</a>
                                     </li>
                                 </ul>
                             </li>

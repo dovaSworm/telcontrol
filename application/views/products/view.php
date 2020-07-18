@@ -27,7 +27,7 @@ echo '</ul>';
                 alt="<?php echo $product['url'] ?>">
             <p class="text-justify"><?php echo $product['description'] ?> </p>
         </div>
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-sm-12 col-md-6">
                 <ul>
                     <?php if(!empty($product['power'])): ;?>
@@ -80,11 +80,11 @@ echo '</ul>';
             </div>
         </div>
 
-        <div>
-            <?php echo '<a class="text-primary" href="' . base_url() . 'products/?subcategory=' . $podkategorija_id . '"><i>Pogledajte još ' . $podkategorija . '</i></a>'; ?>
+        <div class="pl-2 text-primary">
+            <?php echo '<a  href="' . base_url() . 'products/?subcategory=' . $podkategorija_id . '"><i>Look more ' . $podkategorija . '</i></a>'; ?>
             <br>
         </div>
-        <div id="show-for-admin" class="row">
+        <div id="show-for-admin" class="row no-guttters">
             <div class="col-6 text-center">
                 <form action="">
                     <a href="<?php echo base_url(); ?>products/edit/<?php echo $product['id']; ?>"

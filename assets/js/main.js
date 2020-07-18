@@ -19,7 +19,7 @@ $(() => {
 
     $(function() {
         typed.typed({
-            strings: ["", "Welcome!<br>We are<br>Telcontrol.", "We<br>provide<br>controls!"],
+            strings: ["Welcome", "We are Telcontrol", "We provide controls!"],
             typeSpeed: 50,
             loop: true,
         });
@@ -47,11 +47,11 @@ $(() => {
         $(this).removeClass("myshadowsmall");
     });
 
-    // if (!isNaN($('#adminovo').val())) {
-    //     $('#show-for-admin').css("display", "none");
-    // } else {
-    //     $(".navbar h2").css("display", "none");
-    // }
+    if (!isNaN($('#adminovo').val())) {
+        $('#show-for-admin').css("display", "none");
+    } else {
+        $(".navbar h2").css("display", "none");
+    }
 
 
 }); //document.ready
