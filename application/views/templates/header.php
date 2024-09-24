@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-site-verification" content="dienH8VGR4b4asNH0-extCH_DAvzYsFrx1x4mjPabmI" />
     <meta name="description"
-        content="Pro-technology electronics nudi veliki izbor lemilica, sistema za montažu pcb komponenti, robota kao i antistaički program odeće i podova.">
+        content="Telcontrol offer to You Heating controls, Cooling & Refrigeration controls, HVAC controls, LIFT controls, Electrical devices assembling, installation and technical support.">
     <meta name="robots" content="index,follow">
     <meta name="author" content="rdDesign">
-    <meta name="keywords" content="">
+    <meta name="keywords"
+        content="heating, cooling, refrigeration, air, controlls, controls, technical support, lift, assembling">
     <meta name="google-site-verification" content="pMiLlWc0tbntvS3Ky6VZVY9rHKxaVqnqZHD8daTZEus" />
     <link rel="canonical" href="http://telcontrol.net" />
-    <link rel="icon" type="image/png" href="<?php echo base_url(); ?>assets/img/ptefavicon.png">
-    <link rel="apple-touch-icon" href="<?php echo base_url(); ?>assets/img/ptefavicon.png" />
+    <link rel="icon" type="image/png" href="<?php echo base_url(); ?>assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="<?php echo base_url(); ?>assets/img/favicon.ico" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -23,133 +25,202 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/main.css">
     <title><?php echo isset($title) ? $title : ''; ?></title>
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-
 
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top d-block">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg fixed-top d-block">
+            <div class="container-fluid">
                 <div id="logo">
                     <a class="" href="<?php echo base_url(); ?>"><img
                             src="<?php echo base_url(); ?>assets/img/tel-logo.png" alt="Telcontrol"></a>
                 </div>
-                <!-- <button id="triangle-up" class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
-                <div type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation" class="hamburger" title="MENU">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+                <div data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" class="hamburger collapsed" title="MENU" role="button">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url(); ?>index.php">HOME</a>
+                            <a class="nav-link" href="<?php echo base_url(); ?>index.php"><span
+                                    class="eng-lang">HOME</span>
+                                <span class="ser-lang">POČETNA</span>
+                                <span class="ita-lang">PAGINA INIZIALE</span></a>
+
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url(); ?>index.php#services">SERVICES</a>
+                            <a class="nav-link" href="<?php echo base_url(); ?>index.php#services"><span
+                                    class="eng-lang">SERVICES</span>
+                                <span class="ser-lang">USLUGE</span>
+                                <span class="ita-lang">SERVIZI</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url(); ?>index.php#about">ABOUT</a>
+                            <a class="nav-link" href="<?php echo base_url(); ?>index.php#about">
+                                <span class="eng-lang">ABOUT</span>
+                                <span class="ser-lang">O NAMA</span>
+                                <span class="ita-lang">CHI SIAMO</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url(); ?>index.php#contact">CONTACT</a>
+                            <a class="nav-link" href="<?php echo base_url(); ?>index.php#contact"><span
+                                    class="eng-lang">CONTACT</span>
+                                <span class="ser-lang">KONTAKT</span>
+                                <span class="ita-lang">CONTATTI</span></a>
                         </li>
                         <li class="nav-item dropdown dropdown-menu-right">
                             <a class="nav-link dropdown-toggle"
                                 onClick="window.location.href = '<?php echo base_url(); ?>products';return false;"
                                 id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">
-                                PRODUCTS
+                                <span class="eng-lang">PRODUCTS</span>
+                                <span class="ser-lang">PROIZVODI</span>
+                                <span class="ita-lang">PRODOTTI</span>
                             </a>
+
                             <ul class="dropdown-menu dropleft">
                                 <li class="dropdown-submenu dropleft">
                                     <a class="dropdown-item dropdown-toggle"
-                                        href="<?php echo base_url(); ?>products/?category=1">Hydronic controls</a>
+                                        href="<?php echo base_url(); ?>products/category/1"><span
+                                            class="eng-lang">Hydronic controls</span><span class="ita-lang">Controlli
+                                            per L' AQUA DOMESTICA</span><span class="ser-lang">Kontrole
+                                            hidronike</span></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item"
-                                                href="<?php echo base_url(); ?>products/?subcategory=1">Pressurization
-                                                controller</a>
+                                                href="<?php echo base_url(); ?>products/subcategory/1"><span
+                                                    class="eng-lang">Pressurization
+                                                    controller</span><span class="ita-lang">Controlli per la
+                                                    pressurizzazione</span><span class="ser-lang">Kontroler
+                                                    pritiska</span></a>
                                         </li>
                                         <li><a class="dropdown-item"
-                                                href="<?php echo base_url(); ?>products/?subcategory=3">Expansion
-                                                Board</a>
+                                                href="<?php echo base_url(); ?>products/subcategory/3"><span
+                                                    class="eng-lang">Expansion
+                                                    Board</span><span class="ita-lang">Modulo espansione di
+                                                    funzioni</span><span class="ser-lang">Modul za dodatne
+                                                    ulaze/izlaze</span></a>
                                         </li>
                                         <li><a class="dropdown-item"
-                                                href="<?php echo base_url(); ?>products/?subcategory=2">Filter
-                                                controller</a>
+                                                href="<?php echo base_url(); ?>products/subcategory/2"><span
+                                                    class="eng-lang">Filter
+                                                    controller</span><span class="ita-lang">Controlli per i
+                                                    filtri</span><span class="ser-lang">Kontroler filtera</span></a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu dropleft"><a class="dropdown-item dropdown-toggle"
-                                        href="<?php echo base_url(); ?>products/?category=2">Compressed air
-                                        treatment</a>
+                                        href="<?php echo base_url(); ?>products/category/2"><span
+                                            class="eng-lang">Compressed air treatment</span><span
+                                            class="ita-lang">Trattamento dell'aria compressa</span><span
+                                            class="ser-lang">Tretman komprimovanim vazduhom</span></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item"
-                                                href="<?php echo base_url(); ?>products/?subcategory=4">Refrigerated Air
-                                                controller</a>
+                                                href="<?php echo base_url(); ?>products/subcategory/4"><span
+                                                    class="eng-lang">Refrigerated Air
+                                                    controller</span><span class="ita-lang">Controlli a refrigerazione
+                                                    dell'aria</span><span class="ser-lang">Kontroler vazdušnog
+                                                    hlađenja</span></a>
                                         </li>
                                         <li><a class="dropdown-item"
-                                                href="<?php echo base_url(); ?>products/?subcategory=5">Absorbtion dryer
-                                                controlle</a>
+                                                href="<?php echo base_url(); ?>products/subcategory/5"><span
+                                                    class="eng-lang">Absorbtion dryer
+                                                    controller</span><span class="ita-lang">Controlli ad
+                                                    assorbimento</span><span class="ser-lang">Kontroler
+                                                    apsorpcije</span></a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu dropleft"><a class="dropdown-item dropdown-toggle"
-                                        href="<?php echo base_url(); ?>products/?category=3">HVAC controls</a>
+                                        href="<?php echo base_url(); ?>products/category/3"><span class="eng-lang">HVAC
+                                            controls</span><span class="ita-lang">Controlli per il clima</span><span
+                                            class="ser-lang">HVAC kontrole</span></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item"
-                                                href="<?php echo base_url(); ?>products/?subcategory=13">DEK series</a>
+                                                href="<?php echo base_url(); ?>products/subcategory/13"><span
+                                                    class="eng-lang">DEK series</span><span class="ser-lang">DEK
+                                                    serija</span><span class="ita-lang">DEK serie</span></a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu dropleft"><a class="dropdown-item dropdown-toggle"
-                                        href="<?php echo base_url(); ?>products/?category=4">Electrical heating
-                                        controls</a>
+                                        href="<?php echo base_url(); ?>products/category/4"><span
+                                            class="eng-lang">Electrical heating controls</span><span
+                                            class="ita-lang">Comandi per il riscaldamento elettrico</span><span
+                                            class="ser-lang">Kontrole električnog grejanja</span></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item"
-                                                href="<?php echo base_url(); ?>products/?subcategory=10">Display GSM
-                                                thermostat</a>
+                                                href="<?php echo base_url(); ?>products/subcategory/10"><span
+                                                    class="eng-lang">Display GSM
+                                                    thermostat</span><span class="ita-lang">Termostato con display LCD e
+                                                    GSM</span><span class="ser-lang">Termostat GSM sa
+                                                    displejom</span></a>
                                         </li>
                                         <li><a class="dropdown-item"
-                                                href="<?php echo base_url(); ?>products/?subcategory=6">On Board
-                                                thermostat</a>
+                                                href="<?php echo base_url(); ?>products/subcategory/6"><span
+                                                    class="eng-lang">On Board
+                                                    thermostat</span><span class="ita-lang">Termostati bordo
+                                                    macchina</span><span class="ser-lang">On Board thermostat</span></a>
                                         </li>
                                         <li><a class="dropdown-item"
-                                                href="<?php echo base_url(); ?>products/?subcategory=7">Plug in
-                                                thermostat</a>
+                                                href="<?php echo base_url(); ?>products/subcategory/7"><span
+                                                    class="eng-lang">Plug in
+                                                    thermostat</span><span class="ita-lang">Termostati da
+                                                    presa</span><span class="ser-lang">Termostat sa utičnicom</span></a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu dropleft"><a class="dropdown-item dropdown-toggle"
-                                        href="<?php echo base_url(); ?>products/?category=5">Cooling and
-                                        refrigeration</a>
+                                        href="<?php echo base_url(); ?>products/category/5"><span
+                                            class="eng-lang">Cooling and refrigeration</span><span
+                                            class="ita-lang">Refrigerazione</span><span class="ser-lang">Kontrole
+                                            hlađenja</span></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item"
-                                                href="<?php echo base_url(); ?>products/?subcategory=12">REK digital
-                                                controllers</a>
+                                                href="<?php echo base_url(); ?>products/subcategory/11"><span
+                                                    class="eng-lang">LEK & TEK
+                                                    series</span><span class="ita-lang">Controllori digitali tipo LEK e
+                                                    TEK</span><span class="ser-lang">LEK & TEK serije</span></a>
                                         </li>
                                         <li><a class="dropdown-item"
-                                                href="<?php echo base_url(); ?>products/?subcategory=11">LEK & TEK
-                                                series</a>
-                                        </li>
-                                        <li><a class="dropdown-item"
-                                                href="<?php echo base_url(); ?>products/?subcategory=9">REK series</a>
+                                                href="<?php echo base_url(); ?>products/subcategory/9"><span
+                                                    class="eng-lang">REK series</span><span class="ita-lang">REK
+                                                    serie</span><span class="ser-lang">REK serija</span></a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-submenu dropleft"><a class="dropdown-item dropdown-toggle"
-                                        href="<?php echo base_url(); ?>products/?category=6">Remote controls</a>
+                                        href="<?php echo base_url(); ?>products/category/6"><span
+                                            class="eng-lang">Remote controls</span><span class="ita-lang">Controlli
+                                            remoti</span><span class="ser-lang">Kontrole daljinskog
+                                            upravljanja</span></a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item"
-                                                href="<?php echo base_url(); ?>products/?subcategory=14">OMD Telcom</a>
+                                                href="<?php echo base_url(); ?>products/subcategory/8"><span
+                                                    class="eng-lang">OMD Telcom controls for lifts</span><span
+                                                    class="ita-lang">OMD
+                                                    Telcom controlli per ascensori</span><span class="ser-lang">OMD
+                                                    Telcom daljinska kontrola liftova</span></a>
+                                        </li>
+                                        <li><a class="dropdown-item"
+                                                href="<?php echo base_url(); ?>products/subcategory/15"><span
+                                                    class="eng-lang">Remote controls</span><span
+                                                    class="ita-lang">Controlli remoti</span><span
+                                                    class="ser-lang">Daljinska kontrola</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu dropleft"><a class="dropdown-item dropdown-toggle"
+                                        href="<?php echo base_url(); ?>products/category/7"><span
+                                            class="eng-lang">Other</span><span class="ita-lang">Altro</span><span
+                                            class="ser-lang">Ostalo</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="<?php echo base_url(); ?>products/subcategory/14"><span
+                                                    class="eng-lang">Other</span><span
+                                                    class="ita-lang">Altro</span><span
+                                                    class="ser-lang">Ostalo</span></a>
                                         </li>
                                     </ul>
                                 </li>
@@ -157,10 +228,19 @@
                         </li>
                         <?php if ($this->session->userdata('logged_in')): ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url(); ?>products/create">Unesi proizvod</a>
+                            <a class="nav-link" href="<?php echo base_url(); ?>products/create"><span
+                                    class="eng-lang">New product</span><span class="ita-lang">Nuovo prodotto</span><span
+                                    class="ser-lang">Unesi proizvod</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url(); ?>users/logout">Izloguj se</a>
+                            <a class="nav-link" href="<?php echo base_url(); ?>users/logout"><span class="eng-lang">Log
+                                    out</span><span class="ita-lang">Disconnettersi</span><span class="ser-lang">Izloguj
+                                    se</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo base_url(); ?>users/register"><span
+                                    class="eng-lang">Register user</span><span class="ita-lang">registra
+                                    utente</span><span class="ser-lang">Registruj korisnika</span></a>
                         </li>
                         <?php endif;?>
                         <?php if (!$this->session->userdata('logged_in')): ?>
@@ -169,6 +249,17 @@
                                     class="far fa-user-circle"></i></a>
                         </li>
                         <?php endif;?>
+                        <li class="nav-item">
+
+                            <div class="lang">
+                                <button onclick="clickCounter('eng')"
+                                    type="button"><span>EN</span></button>
+                                <button onclick="clickCounter('ita')" type="button"><span>IT</span></button>
+                                <button onclick="clickCounter('ser')" type="button"><span>SR</span></button>
+
+                            </div>
+
+                        </li>
                     </ul>
                 </div>
             </div>

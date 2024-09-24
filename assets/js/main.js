@@ -1,14 +1,116 @@
+console.log(localStorage.clickcount);
+
+function clickCounter(lang) {
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            if (lang == 'eng') {
+                location.reload();
+                $("span.ser-lang").css('display', 'none');
+                $("div.ser-lang").css('display', 'none');
+                $("li.ser-lang").css('display', 'none');
+                $("span.ita-lang").css('display', 'none');
+                $("div.ita-lang").css('display', 'none');
+                $("li.ita-lang").css('display', 'none');
+                $("span.eng-lang").css('display', 'inline-block');
+                $("div.eng-lang").css('display', 'block');
+                $("li.eng-lang").css('display', 'block');
+                localStorage.clickcount = 1;
+            } else if (lang == 'ser') {
+                localStorage.clickcount = 0;
+                location.reload();
+                $("span.ita-lang").css('display', 'none');
+                $("div.ita-lang").css('display', 'none');
+                $("li.ita-lang").css('display', 'none');
+                $("span.eng-lang").css('display', 'none');
+                $("div.eng-lang").css('display', 'none');
+                $("li.eng-lang").css('display', 'none');
+                $("span.ser-lang").css('display', 'inline-block');
+                $("div.ser-lang").css('display', 'block');
+                $("li.ser-lang").css('display', 'block');
+            } else {
+                localStorage.clickcount = 2;
+                location.reload();
+                $("span.ser-lang").css('display', 'none');
+                $("div.ser-lang").css('display', 'none');
+                $("li.ser-lang").css('display', 'none');
+                $("span.ita-lang").css('display', 'inline-block');
+                $("div.ita-lang").css('display', 'block');
+                $("li.ita-lang").css('display', 'block');
+                $("span.eng-lang").css('display', 'none');
+                $("div.eng-lang").css('display', 'none');
+                $("li.eng-lang").css('display', 'none');
+            }
+        } else {
+            localStorage.clickcount = 0;
+        }
+    } else {
+        console.log(localStorage.clickcount + "ne podrzava");
+    }
+}
+
 $(() => {
+    if (localStorage.clickcount == 1) {
+        $("span.ser-lang").css('display', 'none');
+        $("div.ser-lang").css('display', 'none');
+        $("li.ser-lang").css('display', 'none');
+        $("span.ita-lang").css('display', 'none');
+        $("div.ita-lang").css('display', 'none');
+        $("li.ita-lang").css('display', 'none');
+        $("span.eng-lang").css('display', 'inline-block');
+        $("div.eng-lang").css('display', 'block');
+        $("li.eng-lang").css('display', 'block');
+        // console.log(localStorage.clickcount + "u jedinici");
+    } else if (localStorage.clickcount == 2) {
+        $("span.ser-lang").css('display', 'none');
+        $("div.ser-lang").css('display', 'none');
+        $("li.ser-lang").css('display', 'none');
+        $("span.eng-lang").css('display', 'none');
+        $("div.eng-lang").css('display', 'none');
+        $("li.eng-lang").css('display', 'none');
+        $("span.ita-lang").css('display', 'inline-block');
+        $("div.ita-lang").css('display', 'block');
+        $("li.ita-lang").css('display', 'block');
+        // console.log(localStorage.clickcount + "u dvojci");
+    } else if (localStorage.clickcount == 0) {
+        $("span.eng-lang").css('display', 'none');
+        $("div.eng-lang").css('display', 'none');
+        $("li.eng-lang").css('display', 'none');
+        $("span.ita-lang").css('display', 'none');
+        $("div.ita-lang").css('display', 'none');
+        $("li.ita-lang").css('display', 'none');
+        $("span.ser-lang").css('display', 'inline-block');
+        $("div.ser-lang").css('display', 'block');
+        $("li.ser-lang").css('display', 'block');
+        // console.log(localStorage.clickcount + "u nuli");
+    }
     var date = new Date();
     var year = date.getFullYear();
     console.log(year);
     document.getElementById('prava').innerHTML = "<small>Copyright &copy; TELCONTROL S.R.L. " + year + ". All Rights Reserved</small>";
+    // let flag = false;
+    if ($(window).width() <= 992) {
+        $(".hamburger").click(() => {
+            $("nav").addClass('navbg');
+        })
+    }
+    if (document.title !== "Telcontrol") {
+        $("nav").addClass('navbg');
+    }
+
+    setTimeout(function() {
+        $("p.alert").css("display", "none")
+    }, 1900);
 
 
     function navAnima() {
         var scrollPosition = $(window).scrollTop();
-        if (scrollPosition >= 200) {
-            $("nav").addClass('navbg');
+        if (document.title == "Telcontrol" || document.title == "Telcontrol products") {
+            if (scrollPosition >= 200) {
+                $("nav").addClass('navbg');
+            }
+            if (scrollPosition < 200 && document.title == "Telcontrol") {
+                $("nav").removeClass('navbg');
+            }
         }
     }
     $(window).on('scroll', () => {
@@ -47,11 +149,14 @@ $(() => {
         $(this).removeClass("myshadowsmall");
     });
 
-    if (!isNaN($('#adminovo').val())) {
-        $('#show-for-admin').css("display", "none");
+    if ($('#adminovo').val() > 0) {
+        $('#show-for-admin').css("display", "flex");
     } else {
         $(".navbar h2").css("display", "none");
     }
 
-
+    $(".heading-wrap p:nth-of-type(2)").addClass("anima-to-right");
+    $(".heading-wrap p:nth-of-type(3)").addClass("anima-to-right2");
+    $(".heading-wrap p:nth-of-type(4)").addClass("anima-to-right3");
+    $(".heading-wrap p:nth-of-type(5)").addClass("anima-to-right4");
 }); //document.ready

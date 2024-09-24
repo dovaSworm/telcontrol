@@ -10,7 +10,10 @@
                 <div class="red"></div>
             </div>
             <h6 class="text-center"><b>Telcontrol S.r.l.</b></h6>
-            <p class="text-center"><b>World's famous brands, our partners</b></p>
+            <p class="text-center"><span class="eng-lang">World's famous brands, our partners</span><span
+                    class="ser-lang">Svetski poznati brendovi, naši partneri</span><span class="ita-lang">Marchi famosi
+                    nel
+                    mondo con I quali collaboriamo:</span></p>
         </div>
         <div class="row partners-logo">
             <div class="col-sm-12">
@@ -21,29 +24,14 @@
                 <img class="" src="<?php echo base_url(); ?>assets/img/honeywell-logo.jpg" alt="Second slide">
             </div>
         </div>
-        <!-- <div id="carousel" class="carousel slide" data-ride="carousel" role="listbox">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                </div>
-                <div class="carousel-item">
-                </div>
-                <div class="carousel-item">
-                </div>
-                <div class="carousel-item">
-                </div>
-                <div class="carousel-item">
-                </div>
-                <div class="carousel-item">
-                    <img class="" src="<?php echo base_url(); ?>assets/img/ingersoll-rand.jpg" alt="Second slide">
-                </div>
-            </div> 
-        </div> -->
     </div>
 </section>
 
 <!-- CONTACT section -->
 <section id="contact" class="serb">
-    <h2 class="text-center">contact</h2>
+    <h2 class="text-center"><span class="eng-lang">contact</span><span class="ita-lang">contatto</span><span
+            class="ser-lang">kontakt</span>
+    </h2>
     <div class="container p-0">
         <div class="row no-gutters mt-md-5">
             <div class="col-12 col-md-6  m-auto p-2">
@@ -51,15 +39,17 @@
                 <div class="col-12 my-3 d-flex align-items-center">
                     <i class="fas d-inline fa-map-marker-alt d-inline"></i>
                     <div class="d-flex-flex-column">
-                        <h5>Sede operativa</h5>
-                        <address class="d-inline-flex">Via Zorutti 19, 33010 Cassacco, Udine</address>
+                        <h5><span class="ita-lang">SEDE LEGALE</span><span class="eng-lang">HEAD QUARTER</span><span
+                                class="ser-lang text-uppercase">SEDIŠTE REGISTRACIJE</span></h5>
+                        <address class="d-inline-flex">Via Olivi 38, 33100 Treviso</address>
                     </div>
                 </div>
                 <div class="col-12 my-3 d-flex align-items-center">
                     <i class="fas d-inline fa-map-marker-alt d-inline"></i>
                     <div class="d-flex-flex-column">
-                        <h5>Sede Legale</h5>
-                        <address class="d-inline-flex">Via Olivi 38, 33100 Treviso</address>
+                        <h5><span class="ita-lang">SEDE PRODUTTIVA</span><span class="eng-lang">OPERATIVE
+                                PLANT</span><span class="ser-lang">OPERATIVNO SEDIŠTE</span></h5>
+                        <address class="d-inline-flex">Via Zorutti 19, 33010 Cassacco, Udine</address>
                     </div>
                 </div>
                 <div class="col-12 my-3 d-flex align-items-center"><i class="fas d-inline fa-envelope"></i>
@@ -72,37 +62,47 @@
                 <div class="col-12 my-3 d-flex align-items-center">
                     <i class="fas d-inline fa-clock"></i>
                     <div>
-                        <p class="mb-0">mon-fri: 8h-17h</p>
-                        <p class="mb-0">closed on suturdays and sunday's</p>
+                        <p class="mb-0"><span class="eng-lang">Mon-Fri: 8am-5pm</span><span class="ser-lang">Pon-Pet:
+                                08-17h</span><span class="ita-lang">Lun-Ven: 08-17</span></p>
+                        <p class="mb-0"><span class="eng-lang">closed on Saturday and Sunday</span><span
+                                class="ita-lang">chiuso Sabato e Domenica</span><span class="ser-lang">zatvoreno
+                                subotom i nedeljom</span></p>
                     </div>
                 </div>
                 <div class="col-12 social">
                     <a href="#facebook"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://it1075668276.fm.alibaba.com/"><i class="fab fa-alipay"></i></a>
                 </div>
             </div>
 
             <div class="col-12 col-md-6  p-2">
-                <h3 class="text-center">Quick message
+                <h3 class="text-center"><span class="eng-lang">Quick message</span><span class="ita-lang">Messaggio
+                        veloci</span><span class="ser-lang">Brza poruka</span>
                 </h3>
-                <form method="POST" name="contactform" action="contact-form-handler.php">
-                    <p> <label for="name">Name</label>
-                        <input type="text" name="name">
+                <form method="POST" name="contactform" action="email/verify">
+                    <p><label for="name"><span class="eng-lang">Name</span><span class="ita-lang">Nome</span><span
+                                class="ser-lang">Ime</span></label>
+                        <input type="text" id="name" name="name">
                     </p>
-                    <p><label for="email">Your email</label>
-                        <input type="text" name="email">
+                    <p><label for="email"><span class="eng-lang">Your email</span><span class="ita-lang">La tua
+                                mail</span><span class="ser-lang">Vaš email</span></label>
+                        <input type="text" id="email" name="email">
                     </p>
-                    <p><label for="message">Message</label>
-                        <textarea rows="5" name="message"></textarea>
+                    <p><label for="message"><span class="eng-lang">Message</span><span
+                                class="ita-lang">Messaggio</span><span class="ser-lang">Poruka</span></label>
+                        <textarea rows="5" id="message" name="message"></textarea>
                     </p>
-                    <button role="button" type="submit" value="Submit">SEND</button>
+                    <div class="g-recaptcha" data-sitekey="6LfYsnEaAAAAAAnsD5BiSoT4mcGesHNyHXVaeoXV"></div>
+                    <button type="submit" value="Submit"><span class="eng-lang">SEND</span><span
+                            class="ita-lang">INVIA</span><span class="ser-lang">POŠALJI</span></button>
                 </form>
             </div>
-
+            
             <div class="col-12 p-2">
                 <div id="mapa" style="width: 100%"><iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9293.445462665808!2d13.181228537953443!3d46.17149442782863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477a36d693187c1f%3A0xd7baca0fd1f970c0!2sVia%20Pietro%20Zorutti%2C%2019%2C%2033010%20Cassacco%20UD%2C%20Italy!5e0!3m2!1sen!2srs!4v1593092955426!5m2!1sen!2srs"
-                        width="100%" height="390" frameborder="0" style="border:0;" allowfullscreen=""
+                        width="100%" height="390" style="border:0;" allowfullscreen=""
                         aria-hidden="false" tabindex="0"></iframe></div>
             </div>
         </div>
@@ -120,21 +120,36 @@
                         <li>Italy</li>
                         <li>33010 Cassacco, Udine</li>
                         <li>Via Zorutti 19</li>
-                        <li><a href="mailto: info@telcontrolsrl.com">info@telcontrolsrl.com</a></li>
+                        <li><a href="mailto:info@telcontrolsrl.com">info@telcontrolsrl.com</a></li>
                         <li><a href="tel:+39/0432-852279">+39/0432-852279</a></li>
                     </ul>
                 </div>
                 <div class="text-justify col-sm-12 col-md-4">
-                    <h5>Partners</h5>
+                    <h5><span class="eng-lang">Partners</span><span class="ita-lang">Partner</span><span
+                            class="ser-lang">Partneri</span></h5>
                     <ul>
-                        <li><a href="https://www.elktoronics.co.uk">Elktoronics, UK</a></li>
-                        <li><a href="https://www.devel.rs/">Devel DOO, Srbija</a></li>
+                        <li><a href="https://www.electronics-europe.co.uk/">Elektronics Europe Ltd, UK</a></li>
+                        <li><a href="http://dova.epizy.com/?i=1">RD Design</a></li>
                     </ul>
                 </div>
-                <div class="text-justify col-sm-12 col-md-4">Heating controlls, Cooling & Refrigeration controlls, HVAC
-                    controlls, Electrical devices assembling and instalation, automatic production and testing system. A
-                    wide and complete range of products. A special feature is the capability to develop complete special
-                    solutions, customer oriented, helping the customers to realize their own ideas</div>
+                <div class="text-justify col-sm-12 col-md-4 mb-4"><span class="ita-lang">Controlli per il riscaldamento,
+                        controlli per la refrigerazione, controlli per il clima, assemblaggio di schede elettroniche,
+                        produzione e test automatici.
+                        Una vasta e completa gamma di prodotti è attualmente presente nel portfolio e nuovi prodotti
+                        sono in fase di sviluppo. La particolare caratteristica di sviluppare soluzioni speciali
+                        complete, orientate verso il cliente, aiuta questi ultimi a realizzare le loro idee, con
+                        affidabilità e competitività.
+                    </span><span class="eng-lang">Heating controlls, Cooling & Refrigeration controlls, HVAC
+                        controlls, Electrical devices assembling and instalation, automatic production and testing
+                        system. A
+                        wide and complete range of products. A special feature is the capability to develop complete
+                        special
+                        solutions, customer oriented, helping the customers to realize their own ideas.</span><span
+                        class="ser-lang">Kontrole grejanja, kontrole hlađenja, HVAC kontrole, sklapanje i ugradnja
+                        elektronskih ploča, automatski sistem za proizvodnju i testiranje. Širok i kompletan asortiman
+                        proizvoda trenutno je prisutan u portfoliju, a novi proizvodi su u razvoju. Posebna
+                        karakteristika je mogućnost razvoja kompletnih specijalnih rešenja, orijentisanih na kupca,
+                        pomažući klijentima da realizuju sopstvene ideje uz pouzdanost i konkurentnost.</span></div>
 
             </div>
         </div>

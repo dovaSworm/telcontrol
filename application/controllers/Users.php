@@ -11,8 +11,8 @@
             $this->form_validation->set_rules('email', 'Email', 'required|callback_check_email_exists');
 
             if($this->form_validation->run() === FALSE){
-                $this->load->view('templates/header');
-                $this->load->view('users/register', $data);
+                $this->load->view('templates/header', $data);
+                $this->load->view('users/register');
                 $this->load->view('templates/footer');
             }else{
                 //encript pass
@@ -25,14 +25,14 @@
         }
 
         public function login(){
-            $data['title'] = 'Sign in';
+            $data['title'] = 'Log in';
 
             $this->form_validation->set_rules('username', 'Username', 'required');
             $this->form_validation->set_rules('password', 'Password', 'required');
 
             if($this->form_validation->run() === FALSE){
-                $this->load->view('templates/header');
-                $this->load->view('users/login', $data);
+                $this->load->view('templates/header', $data);
+                $this->load->view('users/login');
                 $this->load->view('templates/footer');
             }else{
                 // get username
@@ -85,8 +85,4 @@
                 return false;
             }
         }
-
-        
-
-
-    }
+}
