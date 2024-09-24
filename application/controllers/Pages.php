@@ -10,7 +10,7 @@ class Pages extends CI_Controller
         // echo "this works";
         $data['products'] = $this->product_model->get_recomended();
 // echo json_encode($data);
-        $naslov['title'] = 'Telcontrol';
+        $naslov['title'] = 'Devel';
         $this->load->view('templates/header', $naslov);
         $this->load->view('templates/hero');
         $this->load->view('templates/menu');
